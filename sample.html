@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card{
+            height:500px;
+            width:500px;
+            background-color: rgba(225, 15, 15, 0.341);
+            margin-inline: auto;
+            border-radius: 10px;
+            margin-top: 100px;
+             transition: 1s;
+             
+        }
+        h1{
+            text-align: center;
+            padding-top: 50px;
+            color: rgb(116, 2, 2);
+            text-shadow: 2px 2px 4px #000000;
+        }
+        h2{
+            text-align: center;
+            padding-top: 80px;
+            color: rgb(216, 48, 48);
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .card:hover{
+            background-color: rgba(19, 214, 100, 0.541);
+            transition: 0.5s;
+            /* margin-top: 500px; */
+            box-shadow: 0px 0px 30px black;
+            rotate: -40deg;
+        }
+        img{
+            display: block;
+            margin-inline: auto;
+            margin-top: 50px;
+              height:500px;
+            width:500px;
+            display: none;
+           
+        }
+        .card:hover img{
+            display: block;
+           
+        }
+        .card:hover h2{
+            /* display: none; */
+            color: orange;
+        }
+        .card:hover h1{
+            display: none;
+        }
+        .button{
+             padding: 30px;
+             border-radius: 10px;
+             background-color: rgb(6, 47, 61);
+             border:none;
+             font-size:20px;
+             color: white;
+            cursor: all-scroll;
+            }
+            .button:active{
+               background-color: rgb(178, 32, 81);
+               box-shadow: 0px 0px 10px black;
+               padding: 50px;
+              
+            }
+            .button_part{
+                justify-content: center;
+                display: flex;
+                margin-top: 50px;
+            }
+
+            form{
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+                padding: 10px;
+            }
+            
+            input:focus{
+                border: 2px solid rgb(144, 4, 4);
+                padding: 10px;
+                background-color: rgb(216, 48, 29);
+            }
+             
+            .card-transform{
+                background-color: aquamarine;
+                height: 350px;
+                width: 350px;
+                margin-inline: auto;
+                margin-top: 40px;
+                transition: 1s;
+               
+            }
+
+            .card-transform:hover{
+                 /* transform: translate(-500px,-500px); */
+                 /* scale: 2; */
+                 /* rotate: 40deg; */
+                
+            }
+
+            .card-transform:hover{
+                 background-image:url(./image.png);
+                 /* scale: ; */
+                 /* rotate: 60deg; */
+                 transform: translateY(-50px);
+
+                 box-shadow: 0px 0px 50px black ;
+
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+      <h1>DEAD POOL</h1>
+      <h2>Hover Me</h2>
+      <!-- <img src="./image.png" alt=""> -->
+    </div>
+
+
+
+     <div class="button_part">
+        <button class="button">
+           click and hold me
+        </button>
+     </div>
+
+
+     <form action="">
+        <label for="">Name:</label>
+        <input type="text">
+     </form>
+
+
+     <div class="card-transform">
+       
+     </div>
+
+
+
+
+     <!-- // -------------------------------  -->
+
+      
+
+</body>
+</html>
